@@ -11,7 +11,7 @@ I'm Artemiy and this is my blog, portfolio and collection of (hopefully)
 interesting or helpful posts about various Computer Science topics.
 
 I work in the Compiler Technology Department at the Ivannikov Institute for
-System Programming of the Russian Academy of Science.
+System Programming of the Russian Academy of Sciences.
 
 Alongside my work, I am studying for a Master’s degree in System Programming
 at the Higher School of Economics.
