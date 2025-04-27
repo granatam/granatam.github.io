@@ -1,0 +1,49 @@
+baseURL = 'https://granatam.github.io/'
+languageCode = 'en-us'
+title = 'Yet Another Yet Another CS Blog'
+theme = 'archie'
+copyright = '© Artemiy Granat'
+
+[pagination]
+pagerSize = 4 # articles per page
+
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+[params]
+mode="toggle"
+katex = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[taxonomies]
+tag = "tags"
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/granatam"
+
+[[menu.main]]
+name = "All posts"
+url = "/posts"
+weight = 1
+
+[[menu.main]]
+name = "Tags"
+url = "/tags"
+weight = 2
+
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 3
+

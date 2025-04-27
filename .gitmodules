@@ -1,0 +1,4 @@
+[submodule "themes/archie"]
+	path = themes/archie
+	url = https://github.com/granatam/archie.git
+	branch = granatam-github-io
