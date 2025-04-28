@@ -74,7 +74,7 @@ also created, recording identifiers.
 > Although this post uses GNU Toolchain as an example, LLVM with its compiler
 > drivers (`clang` or `clang++`) offers additional features, such as detailed
 > token diagnostics. To inspect the output of the LLVM lexical analyzer, use
-> e.g. `clang -Xclang -fsyntax-only -dump-tokens foo.c`.
+> e.g. `clang -fsyntax-only -Xclang -dump-tokens foo.c`.
 
 Next comes **syntax analysis** or **parsing**. At this stage, the compiler
 transforms the sequence of lexemes into a tree structure. **The parser**
@@ -83,7 +83,7 @@ to language's grammar rules, producing an **Abstract Syntax Tree (AST)** --- a
 program representation that links operations with their data dependencies.
 During parsing, identifiers in the symbol table are also bound to their context
 and scope. As with lexical analysis, we can get an AST in LLVM with `clang
--Xclang -fsyntax-only -ast-dump foo.c`.
+-fsyntax-only -Xclang -ast-dump foo.c`.
 
 > This might sound like an *LLVM is better than GNU Toolchain* claim, but the
 > reality is more nuanced. We'll explore this comparison in another post!
